@@ -1,0 +1,9 @@
+---
+- name: Apply STIG
+  hosts: all
+  remote_user: root
+  roles:
+    - role: RHEL6-STIG
+      rhel6stig_cat3: yes
+      rhel6stig_cat2: yes
+      rhel6stig_other: yes
